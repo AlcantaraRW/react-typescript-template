@@ -23,7 +23,13 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test:cov": "react-scripts test --coverage --watchAll false"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/pages/**/*.tsx"
+    ]
   },
   "browserslist": {
     "production": [
